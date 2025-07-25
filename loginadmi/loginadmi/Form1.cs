@@ -41,5 +41,24 @@ namespace loginadmi
         {
 
         }
+
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+            homeadmi nuevoFormulario = new homeadmi();
+
+            nuevoFormulario.Show();
+
+            this.Hide(); // o this.Close(); si quieres cerrarlo
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
