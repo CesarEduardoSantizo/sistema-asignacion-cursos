@@ -31,11 +31,6 @@ namespace loginadmi
             this.Hide(); // o this.Close(); si quieres cerrarlo
         }
 
-        private void lbl_agregar_estudiante_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -64,6 +59,35 @@ namespace loginadmi
         private void btn_estudiantes_Click(object sender, EventArgs e)
         {
             agregarestudiante nuevoFormulario = new agregarestudiante();
+
+            nuevoFormulario.Show();
+
+            this.Hide(); // o this.Close(); si quieres cerrarlo
+        }
+
+        private void lbl_dpi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_carrera_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_año_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_catedratico_Click(object sender, EventArgs e)
+        {
+            agregar_catedratico nuevoFormulario = new agregar_catedratico();
 
             nuevoFormulario.Show();
 
