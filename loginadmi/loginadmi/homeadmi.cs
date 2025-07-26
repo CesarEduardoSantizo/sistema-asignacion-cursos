@@ -94,5 +94,23 @@ namespace loginadmi
 
             this.Hide(); // o this.Close(); si quieres cerrarlo
         }
+
+        private void btn_estudiantes_Click(object sender, EventArgs e)
+        {
+            agregarestudiante nuevoFormulario = new agregarestudiante();
+
+            nuevoFormulario.Show();
+
+            this.Hide(); // o this.Close(); si quieres cerrarlo
+        }
+
+        private void btn_catedratico_Click(object sender, EventArgs e)
+        {
+            agregar_catedratico nuevoFormulario = new agregar_catedratico();
+
+            nuevoFormulario.Show();
+
+            this.Hide(); // o this.Close(); si quieres cerrarlo
+        }
     }
 }

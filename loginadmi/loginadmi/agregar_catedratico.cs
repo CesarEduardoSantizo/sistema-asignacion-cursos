@@ -53,5 +53,20 @@ namespace loginadmi
         {
 
         }
+
+        private void txt_nombres_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbl_agregar_estudiante_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
