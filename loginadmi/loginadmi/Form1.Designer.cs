@@ -62,6 +62,7 @@ namespace loginadmi
             this.txt_contraseña.Location = new System.Drawing.Point(47, 299);
             this.txt_contraseña.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_contraseña.Name = "txt_contraseña";
+            this.txt_contraseña.PasswordChar = '*';
             this.txt_contraseña.Size = new System.Drawing.Size(321, 22);
             this.txt_contraseña.TabIndex = 6;
             // 
@@ -128,9 +129,10 @@ namespace loginadmi
             this.ClientSize = new System.Drawing.Size(1312, 783);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "frm_login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
