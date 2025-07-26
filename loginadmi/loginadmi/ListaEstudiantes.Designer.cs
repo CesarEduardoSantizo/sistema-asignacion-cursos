@@ -42,6 +42,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_home = new System.Windows.Forms.Panel();
+            this.list_estudiantes = new System.Windows.Forms.DataGridView();
             this.btn_eliminarEstudiantes = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_usurio = new System.Windows.Forms.Label();
@@ -51,7 +52,6 @@
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.btn_lab = new System.Windows.Forms.Button();
-            this.list_estudiantes = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -60,10 +60,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnl_home.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.list_estudiantes)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.list_estudiantes)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -111,6 +111,7 @@
             this.btn_catedratico.TabIndex = 72;
             this.btn_catedratico.Text = "Catedratico";
             this.btn_catedratico.UseVisualStyleBackColor = false;
+            this.btn_catedratico.Click += new System.EventHandler(this.btn_catedratico_Click);
             // 
             // btn_estudiantes
             // 
@@ -123,6 +124,7 @@
             this.btn_estudiantes.TabIndex = 71;
             this.btn_estudiantes.Text = "Estudiante";
             this.btn_estudiantes.UseVisualStyleBackColor = false;
+            this.btn_estudiantes.Click += new System.EventHandler(this.btn_estudiantes_Click);
             // 
             // btn_inicio
             // 
@@ -135,6 +137,7 @@
             this.btn_inicio.TabIndex = 70;
             this.btn_inicio.Text = "Inicio";
             this.btn_inicio.UseVisualStyleBackColor = false;
+            this.btn_inicio.Click += new System.EventHandler(this.btn_inicio_Click);
             // 
             // pictureBox13
             // 
@@ -213,6 +216,18 @@
             this.pnl_home.Name = "pnl_home";
             this.pnl_home.Size = new System.Drawing.Size(1064, 788);
             this.pnl_home.TabIndex = 64;
+            // 
+            // list_estudiantes
+            // 
+            this.list_estudiantes.BackgroundColor = System.Drawing.SystemColors.Menu;
+            this.list_estudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.list_estudiantes.Location = new System.Drawing.Point(76, 160);
+            this.list_estudiantes.Name = "list_estudiantes";
+            this.list_estudiantes.RowHeadersWidth = 51;
+            this.list_estudiantes.RowTemplate.Height = 24;
+            this.list_estudiantes.Size = new System.Drawing.Size(903, 430);
+            this.list_estudiantes.TabIndex = 45;
+            this.list_estudiantes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.list_estudiantes_CellContentClick);
             // 
             // btn_eliminarEstudiantes
             // 
@@ -317,18 +332,6 @@
             this.btn_lab.Text = "Labotorios";
             this.btn_lab.UseVisualStyleBackColor = false;
             // 
-            // list_estudiantes
-            // 
-            this.list_estudiantes.BackgroundColor = System.Drawing.SystemColors.Menu;
-            this.list_estudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.list_estudiantes.Location = new System.Drawing.Point(76, 160);
-            this.list_estudiantes.Name = "list_estudiantes";
-            this.list_estudiantes.RowHeadersWidth = 51;
-            this.list_estudiantes.RowTemplate.Height = 24;
-            this.list_estudiantes.Size = new System.Drawing.Size(903, 430);
-            this.list_estudiantes.TabIndex = 45;
-            this.list_estudiantes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.list_estudiantes_CellContentClick);
-            // 
             // ListaEstudiantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -353,6 +356,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pnl_home);
             this.Name = "ListaEstudiantes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListaEstudiantes";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -363,11 +367,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnl_home.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.list_estudiantes)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.list_estudiantes)).EndInit();
             this.ResumeLayout(false);
 
         }
