@@ -97,5 +97,26 @@ namespace loginadmi
                 }
             }
         }
+
+        private void btn_inicio_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form homeadmi= new homeadmi();
+            homeadmi.Show();
+        }
+
+        private void btn_estudiantes_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form agregarestudiante = new agregarestudiante();
+            agregarestudiante.Show();
+        }
+
+        private void btn_catedratico_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form agregar_catedratico = new agregar_catedratico();
+            agregar_catedratico.Show();
+        }
     }
 }
