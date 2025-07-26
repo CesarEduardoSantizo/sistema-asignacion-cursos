@@ -180,5 +180,12 @@ namespace loginadmi
         {
 
         }
+
+        private void btn_listaEstudiantes_Click(object sender, EventArgs e)
+        {
+            ListaEstudiantes nuevoFormulario = new ListaEstudiantes();
+            nuevoFormulario.Show();
+            this.Hide(); // o this.Close(); si quieres cerrarlo
+        }
     }
 }

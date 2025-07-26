@@ -70,6 +70,7 @@ namespace loginadmi
             this.btn_cursos = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbl_agregar_estudiante = new System.Windows.Forms.Label();
+            this.btn_listaEstudiantes = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -87,7 +88,7 @@ namespace loginadmi
             // 
             this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
             this.pictureBox13.Location = new System.Drawing.Point(7, 526);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(73, 62);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -98,7 +99,7 @@ namespace loginadmi
             // 
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
             this.pictureBox12.Location = new System.Drawing.Point(7, 607);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(73, 62);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -109,7 +110,7 @@ namespace loginadmi
             // 
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
             this.pictureBox11.Location = new System.Drawing.Point(7, 684);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(73, 62);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -120,7 +121,7 @@ namespace loginadmi
             // 
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
             this.pictureBox10.Location = new System.Drawing.Point(7, 441);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(73, 62);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -131,7 +132,7 @@ namespace loginadmi
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(7, 354);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(73, 62);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -142,7 +143,7 @@ namespace loginadmi
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(7, 190);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(73, 62);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -153,7 +154,7 @@ namespace loginadmi
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(7, 272);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(73, 62);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -164,7 +165,7 @@ namespace loginadmi
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(40, 14);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(163, 133);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -174,10 +175,11 @@ namespace loginadmi
             // pnl_home
             // 
             this.pnl_home.BackColor = System.Drawing.Color.White;
+            this.pnl_home.Controls.Add(this.btn_listaEstudiantes);
             this.pnl_home.Controls.Add(this.btn_registrar);
             this.pnl_home.Controls.Add(this.panel1);
             this.pnl_home.Location = new System.Drawing.Point(249, -2);
-            this.pnl_home.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnl_home.Margin = new System.Windows.Forms.Padding(4);
             this.pnl_home.Name = "pnl_home";
             this.pnl_home.Size = new System.Drawing.Size(1064, 788);
             this.pnl_home.TabIndex = 26;
@@ -187,8 +189,8 @@ namespace loginadmi
             this.btn_registrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(20)))));
             this.btn_registrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_registrar.ForeColor = System.Drawing.Color.White;
-            this.btn_registrar.Location = new System.Drawing.Point(371, 690);
-            this.btn_registrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_registrar.Location = new System.Drawing.Point(160, 690);
+            this.btn_registrar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_registrar.Name = "btn_registrar";
             this.btn_registrar.Size = new System.Drawing.Size(261, 66);
             this.btn_registrar.TabIndex = 44;
@@ -406,7 +408,7 @@ namespace loginadmi
             this.btn_inicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(20)))));
             this.btn_inicio.ForeColor = System.Drawing.Color.White;
             this.btn_inicio.Location = new System.Drawing.Point(99, 212);
-            this.btn_inicio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_inicio.Margin = new System.Windows.Forms.Padding(4);
             this.btn_inicio.Name = "btn_inicio";
             this.btn_inicio.Size = new System.Drawing.Size(111, 34);
             this.btn_inicio.TabIndex = 40;
@@ -425,7 +427,7 @@ namespace loginadmi
             this.btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(20)))));
             this.btn.ForeColor = System.Drawing.Color.White;
             this.btn.Location = new System.Drawing.Point(99, 624);
-            this.btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn.Margin = new System.Windows.Forms.Padding(4);
             this.btn.Name = "btn";
             this.btn.Size = new System.Drawing.Size(111, 34);
             this.btn.TabIndex = 51;
@@ -437,7 +439,7 @@ namespace loginadmi
             this.btn_lab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(20)))));
             this.btn_lab.ForeColor = System.Drawing.Color.White;
             this.btn_lab.Location = new System.Drawing.Point(99, 545);
-            this.btn_lab.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_lab.Margin = new System.Windows.Forms.Padding(4);
             this.btn_lab.Name = "btn_lab";
             this.btn_lab.Size = new System.Drawing.Size(111, 34);
             this.btn_lab.TabIndex = 50;
@@ -449,7 +451,7 @@ namespace loginadmi
             this.btn_notas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(20)))));
             this.btn_notas.ForeColor = System.Drawing.Color.White;
             this.btn_notas.Location = new System.Drawing.Point(99, 458);
-            this.btn_notas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_notas.Margin = new System.Windows.Forms.Padding(4);
             this.btn_notas.Name = "btn_notas";
             this.btn_notas.Size = new System.Drawing.Size(111, 34);
             this.btn_notas.TabIndex = 49;
@@ -461,7 +463,7 @@ namespace loginadmi
             this.btn_catedratico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(20)))));
             this.btn_catedratico.ForeColor = System.Drawing.Color.White;
             this.btn_catedratico.Location = new System.Drawing.Point(99, 366);
-            this.btn_catedratico.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_catedratico.Margin = new System.Windows.Forms.Padding(4);
             this.btn_catedratico.Name = "btn_catedratico";
             this.btn_catedratico.Size = new System.Drawing.Size(111, 34);
             this.btn_catedratico.TabIndex = 48;
@@ -474,7 +476,7 @@ namespace loginadmi
             this.btn_estudiantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(20)))));
             this.btn_estudiantes.ForeColor = System.Drawing.Color.White;
             this.btn_estudiantes.Location = new System.Drawing.Point(99, 288);
-            this.btn_estudiantes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_estudiantes.Margin = new System.Windows.Forms.Padding(4);
             this.btn_estudiantes.Name = "btn_estudiantes";
             this.btn_estudiantes.Size = new System.Drawing.Size(111, 34);
             this.btn_estudiantes.TabIndex = 47;
@@ -487,7 +489,7 @@ namespace loginadmi
             this.btn_cursos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(20)))));
             this.btn_cursos.ForeColor = System.Drawing.Color.White;
             this.btn_cursos.Location = new System.Drawing.Point(99, 697);
-            this.btn_cursos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_cursos.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cursos.Name = "btn_cursos";
             this.btn_cursos.Size = new System.Drawing.Size(111, 34);
             this.btn_cursos.TabIndex = 52;
@@ -517,6 +519,20 @@ namespace loginadmi
             this.lbl_agregar_estudiante.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lbl_agregar_estudiante.Click += new System.EventHandler(this.lbl_agregar_estudiante_Click);
             // 
+            // btn_listaEstudiantes
+            // 
+            this.btn_listaEstudiantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(20)))));
+            this.btn_listaEstudiantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_listaEstudiantes.ForeColor = System.Drawing.Color.White;
+            this.btn_listaEstudiantes.Location = new System.Drawing.Point(538, 690);
+            this.btn_listaEstudiantes.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_listaEstudiantes.Name = "btn_listaEstudiantes";
+            this.btn_listaEstudiantes.Size = new System.Drawing.Size(261, 66);
+            this.btn_listaEstudiantes.TabIndex = 45;
+            this.btn_listaEstudiantes.Text = "lista Estudiantes";
+            this.btn_listaEstudiantes.UseVisualStyleBackColor = false;
+            this.btn_listaEstudiantes.Click += new System.EventHandler(this.btn_listaEstudiantes_Click);
+            // 
             // agregarestudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -540,7 +556,7 @@ namespace loginadmi
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pnl_home);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "agregarestudiante";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -603,5 +619,6 @@ namespace loginadmi
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lbl_agregar_estudiante;
+        private System.Windows.Forms.Button btn_listaEstudiantes;
     }
 }
