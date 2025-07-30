@@ -61,7 +61,7 @@ namespace loginadmi
                     comando.Parameters.AddWithValue("@usuario", usuario);
                     comando.Parameters.AddWithValue("@contraseña", contraseña);
                     int resultado = Convert.ToInt32(comando.ExecuteScalar());
-                    if (resultado > 0 && resultado.codigoUsuario == 1)
+                    if (resultado > 0)
                     {
                         MessageBox.Show("Inicio de sesión exitoso.");
                         homeadmi nuevoFormulario = new homeadmi();
