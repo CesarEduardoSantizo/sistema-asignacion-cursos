@@ -123,6 +123,12 @@
     <Compile Include="FrmHomeEstudiantes.Designer.cs">
       <DependentUpon>FrmHomeEstudiantes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmInscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInscripcion.Designer.cs">
+      <DependentUpon>FrmInscripcion.cs</DependentUpon>
+    </Compile>
     <Compile Include="homeadmi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmHomeEstudiantes.resx">
       <DependentUpon>FrmHomeEstudiantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInscripcion.resx">
+      <DependentUpon>FrmInscripcion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="homeadmi.resx">
       <DependentUpon>homeadmi.cs</DependentUpon>
