@@ -21,5 +21,20 @@ namespace loginadmi
         {
 
         }
+
+        private void btn_notas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmHomeEstudiantes_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInscripcion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
