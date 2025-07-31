@@ -10,39 +10,25 @@ using System.Windows.Forms;
 
 namespace loginadmi
 {
-    public partial class FrmHomeEstudiantes : Form
+    public partial class FrmAsignacion : Form
     {
-        public FrmHomeEstudiantes()
+        public FrmAsignacion()
         {
             InitializeComponent();
         }
 
-        private void pnl_home_Paint(object sender, PaintEventArgs e)
+        private void btnInicio_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btn_notas_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FrmHomeEstudiantes_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnInscripcion_Click(object sender, EventArgs e)
-        {
-            FrmInscripcion nuevoFormulario = new FrmInscripcion();
+            FrmHomeEstudiantes nuevoFormulario = new FrmHomeEstudiantes();
 
             nuevoFormulario.Show();
 
             this.Hide(); // o this.Close(); si quieres cerrarlo
         }
 
-        private void btnIrInscipcion_Click(object sender, EventArgs e)
+        private void btnInscripcion_Click(object sender, EventArgs e)
         {
+
             FrmInscripcion nuevoFormulario = new FrmInscripcion();
 
             nuevoFormulario.Show();
@@ -52,6 +38,7 @@ namespace loginadmi
 
         private void btnAsignacion_Click(object sender, EventArgs e)
         {
+
             FrmAsignacion nuevoFormulario = new FrmAsignacion();
 
             nuevoFormulario.Show();
@@ -59,13 +46,9 @@ namespace loginadmi
             this.Hide(); // o this.Close(); si quieres cerrarlo
         }
 
-        private void btnAsignacion1_Click(object sender, EventArgs e)
+        private void lblDatos_Click(object sender, EventArgs e)
         {
-            FrmAsignacion nuevoFormulario = new FrmAsignacion();
 
-            nuevoFormulario.Show();
-
-            this.Hide(); // o this.Close(); si quieres cerrarlo
         }
     }
 }

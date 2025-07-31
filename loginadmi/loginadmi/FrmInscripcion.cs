@@ -34,17 +34,29 @@ namespace loginadmi
 
         private void btnAsignacion_Click(object sender, EventArgs e)
         {
+            FrmAsignacion nuevoFormulario = new FrmAsignacion  ();
 
+            nuevoFormulario.Show();
+
+            this.Hide(); // o this.Close(); si quieres cerrarlo
         }
 
         private void btnInscripcion_Click(object sender, EventArgs e)
         {
+            FrmInscripcion nuevoFormulario = new FrmInscripcion();
 
+            nuevoFormulario.Show();
+
+            this.Hide(); // o this.Close(); si quieres cerrarlo
         }
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
+            FrmHomeEstudiantes nuevoFormulario = new FrmHomeEstudiantes();
 
+            nuevoFormulario.Show();
+
+            this.Hide(); // o this.Close(); si quieres cerrarlo
         }
 
         private void btnPensum_Click(object sender, EventArgs e)
@@ -83,6 +95,16 @@ namespace loginadmi
         }
 
         private void PanMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblInscripcion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtValor_TextChanged(object sender, EventArgs e)
         {
 
         }
