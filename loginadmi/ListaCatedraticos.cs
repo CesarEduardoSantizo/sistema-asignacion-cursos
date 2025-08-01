@@ -101,7 +101,7 @@ namespace loginadmi
         private void btn_inicio_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form homeadmi= new homeadmi();
+            Form homeadmi = new homeadmi();
             homeadmi.Show();
         }
 
@@ -117,16 +117,6 @@ namespace loginadmi
             this.Hide();
             Form agregar_catedratico = new agregar_catedratico();
             agregar_catedratico.Show();
-        }
-
-        private void pnl_home_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lbl_Lista_estudiantes_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
