@@ -141,11 +141,19 @@
     <Compile Include="homeadmi.Designer.cs">
       <DependentUpon>homeadmi.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="ListaCatedratico.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ListaCatedratico.Designer.cs">
       <DependentUpon>ListaCatedratico.cs</DependentUpon>
+=======
+    <Compile Include="FrmNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNotas.Designer.cs">
+      <DependentUpon>FrmNotas.cs</DependentUpon>
+>>>>>>> 6b4189b945c602cbaa3d0d60f04899440211d064
     </Compile>
     <Compile Include="ListaEstudiantes.cs">
       <SubType>Form</SubType>
@@ -182,8 +190,13 @@
     <EmbeddedResource Include="homeadmi.resx">
       <DependentUpon>homeadmi.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="ListaCatedratico.resx">
       <DependentUpon>ListaCatedratico.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="FrmNotas.resx">
+      <DependentUpon>FrmNotas.cs</DependentUpon>
+>>>>>>> 6b4189b945c602cbaa3d0d60f04899440211d064
     </EmbeddedResource>
     <EmbeddedResource Include="ListaEstudiantes.resx">
       <DependentUpon>ListaEstudiantes.cs</DependentUpon>
