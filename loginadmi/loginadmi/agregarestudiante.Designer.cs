@@ -40,6 +40,7 @@ namespace loginadmi
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_home = new System.Windows.Forms.Panel();
+            this.btn_listaEstudiantes = new System.Windows.Forms.Button();
             this.btn_registrar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_contraseña = new System.Windows.Forms.Label();
@@ -70,7 +71,6 @@ namespace loginadmi
             this.btn_cursos = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbl_agregar_estudiante = new System.Windows.Forms.Label();
-            this.btn_listaEstudiantes = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -183,6 +183,20 @@ namespace loginadmi
             this.pnl_home.Name = "pnl_home";
             this.pnl_home.Size = new System.Drawing.Size(1064, 788);
             this.pnl_home.TabIndex = 26;
+            // 
+            // btn_listaEstudiantes
+            // 
+            this.btn_listaEstudiantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(20)))));
+            this.btn_listaEstudiantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_listaEstudiantes.ForeColor = System.Drawing.Color.White;
+            this.btn_listaEstudiantes.Location = new System.Drawing.Point(538, 690);
+            this.btn_listaEstudiantes.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_listaEstudiantes.Name = "btn_listaEstudiantes";
+            this.btn_listaEstudiantes.Size = new System.Drawing.Size(261, 66);
+            this.btn_listaEstudiantes.TabIndex = 45;
+            this.btn_listaEstudiantes.Text = "lista Estudiantes";
+            this.btn_listaEstudiantes.UseVisualStyleBackColor = false;
+            this.btn_listaEstudiantes.Click += new System.EventHandler(this.btn_listaEstudiantes_Click);
             // 
             // btn_registrar
             // 
@@ -518,20 +532,6 @@ namespace loginadmi
             this.lbl_agregar_estudiante.Text = "Agregar Estudiantes";
             this.lbl_agregar_estudiante.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lbl_agregar_estudiante.Click += new System.EventHandler(this.lbl_agregar_estudiante_Click);
-            // 
-            // btn_listaEstudiantes
-            // 
-            this.btn_listaEstudiantes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(20)))));
-            this.btn_listaEstudiantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_listaEstudiantes.ForeColor = System.Drawing.Color.White;
-            this.btn_listaEstudiantes.Location = new System.Drawing.Point(538, 690);
-            this.btn_listaEstudiantes.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_listaEstudiantes.Name = "btn_listaEstudiantes";
-            this.btn_listaEstudiantes.Size = new System.Drawing.Size(261, 66);
-            this.btn_listaEstudiantes.TabIndex = 45;
-            this.btn_listaEstudiantes.Text = "lista Estudiantes";
-            this.btn_listaEstudiantes.UseVisualStyleBackColor = false;
-            this.btn_listaEstudiantes.Click += new System.EventHandler(this.btn_listaEstudiantes_Click);
             // 
             // agregarestudiante
             // 

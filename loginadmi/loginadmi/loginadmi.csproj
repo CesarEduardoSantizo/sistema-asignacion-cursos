@@ -110,12 +110,30 @@
     <Compile Include="agregar_catedratico.Designer.cs">
       <DependentUpon>agregar_catedratico.cs</DependentUpon>
     </Compile>
+    <Compile Include="Carreras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Carreras.Designer.cs">
+      <DependentUpon>Carreras.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConexionBD.cs" />
+    <Compile Include="Facultades2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facultades2.Designer.cs">
+      <DependentUpon>Facultades2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facultades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facultades.Designer.cs">
+      <DependentUpon>Facultades.cs</DependentUpon>
     </Compile>
     <Compile Include="homeadmi.cs">
       <SubType>Form</SubType>
@@ -129,6 +147,12 @@
     <Compile Include="ListaEstudiantes.Designer.cs">
       <DependentUpon>ListaEstudiantes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pensum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pensum.Designer.cs">
+      <DependentUpon>Pensum.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="agregarestudiante.resx">
@@ -136,6 +160,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="agregar_catedratico.resx">
       <DependentUpon>agregar_catedratico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Carreras.resx">
+      <DependentUpon>Carreras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facultades.resx">
+      <DependentUpon>Facultades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facultades2.resx">
+      <DependentUpon>Facultades2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -145,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ListaEstudiantes.resx">
       <DependentUpon>ListaEstudiantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pensum.resx">
+      <DependentUpon>Pensum.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
