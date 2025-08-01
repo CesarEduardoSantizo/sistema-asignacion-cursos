@@ -416,3 +416,6 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+/loginadmi/loginadmi/Form2.Designer.cs
+/loginadmi/loginadmi/Form2.cs
+/loginadmi/loginadmi/Form2.resx
