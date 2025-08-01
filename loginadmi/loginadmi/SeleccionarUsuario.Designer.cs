@@ -46,13 +46,14 @@
             this.label1.Location = new System.Drawing.Point(72, 202);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(404, 44);
+            this.label1.Size = new System.Drawing.Size(403, 44);
             this.label1.TabIndex = 2;
             this.label1.Text = "Seleccionar El Usuario";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(142, 319);
@@ -126,7 +127,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "SeleccionarUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
