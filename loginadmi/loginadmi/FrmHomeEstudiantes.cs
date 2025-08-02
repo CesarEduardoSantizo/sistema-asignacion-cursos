@@ -67,5 +67,33 @@ namespace loginadmi
 
             this.Hide(); // o this.Close(); si quieres cerrarlo
         }
+
+        private void btnPensum1_Click(object sender, EventArgs e)
+        {
+            FrmPensum nuevoFormulario = new FrmPensum();
+            nuevoFormulario.Show();
+            this.Hide();
+        }
+
+        private void btnPensum_Click(object sender, EventArgs e)
+        {
+            FrmPensum nuevoFormulario = new FrmPensum();
+            nuevoFormulario.Show();
+            this.Hide();
+        }
+
+        private void btnNotas1_Click(object sender, EventArgs e)
+        {
+            FrmNotasEstudiante nuevoFormulario = new FrmNotasEstudiante();
+            nuevoFormulario.Show();
+            this.Hide();
+        }
+
+        private void btnNotas_Click(object sender, EventArgs e)
+        {
+            FrmNotasEstudiante nuevoFormulario = new FrmNotasEstudiante();
+            nuevoFormulario.Show();
+            this.Hide();
+        }
     }
 }
