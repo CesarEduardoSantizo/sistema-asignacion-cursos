@@ -112,5 +112,22 @@ namespace loginadmi
 
             this.Hide(); // o this.Close(); si quieres cerrarlo
         }
+
+        private void btn_inicio_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
+
+        private void btn_agregar5_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void btn_Clic(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
