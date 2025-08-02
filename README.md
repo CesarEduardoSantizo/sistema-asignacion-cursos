@@ -1,1 +1,2 @@
-# Sistema_Asignacion_Cursos_Grupo5
+# sistema-asignacion-cursos
+# contribucion Sergio Izeppi

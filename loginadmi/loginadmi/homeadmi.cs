@@ -117,5 +117,19 @@ namespace loginadmi
         {
 
         }
+
+        private void btn_fac_Click(object sender, EventArgs e)
+        {
+            Facultades nuevoFormulario = new Facultades();
+            nuevoFormulario.Show();
+            this.Hide(); 
+        }
+
+        private void btn_facultades_Click(object sender, EventArgs e)
+        {
+            Facultades nuevoFormulario = new Facultades();
+            nuevoFormulario.Show();
+            this.Hide();
+        }
     }
 }

@@ -68,5 +68,10 @@ namespace loginadmi
         {
 
         }
+
+        private void btn_registrar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
