@@ -69,10 +69,10 @@
             this.picPensum = new System.Windows.Forms.PictureBox();
             this.PicNotas = new System.Windows.Forms.PictureBox();
             this.PicAsignacion = new System.Windows.Forms.PictureBox();
-            this.PicInicio = new System.Windows.Forms.PictureBox();
             this.btnPensum = new System.Windows.Forms.Button();
             this.btnNotas = new System.Windows.Forms.Button();
             this.btnCursos = new System.Windows.Forms.Button();
+            this.PicInicio = new System.Windows.Forms.PictureBox();
             this.pnl_home.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -414,6 +414,7 @@
             this.btnInicio.TabIndex = 115;
             this.btnInicio.Text = "Inicio";
             this.btnInicio.UseVisualStyleBackColor = false;
+            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
             // PanMenu
             // 
@@ -452,6 +453,7 @@
             this.btnBuscar.TabIndex = 50;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtAño
             // 
@@ -565,17 +567,6 @@
             this.PicAsignacion.TabIndex = 119;
             this.PicAsignacion.TabStop = false;
             // 
-            // PicInicio
-            // 
-            this.PicInicio.Image = ((System.Drawing.Image)(resources.GetObject("PicInicio.Image")));
-            this.PicInicio.Location = new System.Drawing.Point(17, 226);
-            this.PicInicio.Margin = new System.Windows.Forms.Padding(4);
-            this.PicInicio.Name = "PicInicio";
-            this.PicInicio.Size = new System.Drawing.Size(67, 62);
-            this.PicInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PicInicio.TabIndex = 112;
-            this.PicInicio.TabStop = false;
-            // 
             // btnPensum
             // 
             this.btnPensum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(20)))));
@@ -617,12 +608,24 @@
             this.btnCursos.Text = "Cursos";
             this.btnCursos.UseVisualStyleBackColor = false;
             // 
+            // PicInicio
+            // 
+            this.PicInicio.Image = ((System.Drawing.Image)(resources.GetObject("PicInicio.Image")));
+            this.PicInicio.Location = new System.Drawing.Point(17, 215);
+            this.PicInicio.Margin = new System.Windows.Forms.Padding(4);
+            this.PicInicio.Name = "PicInicio";
+            this.PicInicio.Size = new System.Drawing.Size(67, 62);
+            this.PicInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PicInicio.TabIndex = 124;
+            this.PicInicio.TabStop = false;
+            // 
             // FrmNotasEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(1312, 783);
+            this.Controls.Add(this.PicInicio);
             this.Controls.Add(this.pnl_home);
             this.Controls.Add(this.btnAsignacion);
             this.Controls.Add(this.btnInscripcion);
@@ -634,7 +637,6 @@
             this.Controls.Add(this.picPensum);
             this.Controls.Add(this.PicNotas);
             this.Controls.Add(this.PicAsignacion);
-            this.Controls.Add(this.PicInicio);
             this.Controls.Add(this.btnPensum);
             this.Controls.Add(this.btnNotas);
             this.Controls.Add(this.btnCursos);
@@ -704,7 +706,6 @@
         private System.Windows.Forms.PictureBox picPensum;
         private System.Windows.Forms.PictureBox PicNotas;
         private System.Windows.Forms.PictureBox PicAsignacion;
-        private System.Windows.Forms.PictureBox PicInicio;
         private System.Windows.Forms.Button btnPensum;
         private System.Windows.Forms.Button btnNotas;
         private System.Windows.Forms.Button btnCursos;
@@ -714,5 +715,6 @@
         private System.Windows.Forms.Label lblAño;
         private System.Windows.Forms.Label lblSemestre;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.PictureBox PicInicio;
     }
 }

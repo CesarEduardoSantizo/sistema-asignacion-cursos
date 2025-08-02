@@ -30,5 +30,17 @@ namespace loginadmi
             nuevoFormulario.Show();
             this.Hide();
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInicio_Click(object sender, EventArgs e)
+        {
+            FrmHomeEstudiantes nuevoFormulario = new FrmHomeEstudiantes();
+            nuevoFormulario.Show();
+            this.Hide();
+        }
     }
 }
