@@ -98,6 +98,40 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrador\Cursos\clsCarrera.cs" />
+    <Compile Include="Administrador\Cursos\clsCatedraticos.cs" />
+    <Compile Include="Administrador\Cursos\clsCurso.cs" />
+    <Compile Include="Administrador\Cursos\clsDiasCurso.cs" />
+    <Compile Include="Administrador\Cursos\frmAsignacionLaboratorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\Cursos\frmAsignacionLaboratorio.Designer.cs">
+      <DependentUpon>frmAsignacionLaboratorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Cursos\frmHabilitacionCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\Cursos\frmHabilitacionCursos.Designer.cs">
+      <DependentUpon>frmHabilitacionCursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Cursos\frmListadoCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\Cursos\frmListadoCursos.Designer.cs">
+      <DependentUpon>frmListadoCursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Cursos\frmListadoLaboratorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\Cursos\frmListadoLaboratorio.Designer.cs">
+      <DependentUpon>frmListadoLaboratorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrador\Cursos\frmModuloCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrador\Cursos\frmModuloCursos.Designer.cs">
+      <DependentUpon>frmModuloCursos.cs</DependentUpon>
+    </Compile>
     <Compile Include="agregarestudiante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +171,21 @@
     <Compile Include="SeleccionarUsuario.Designer.cs">
       <DependentUpon>SeleccionarUsuario.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Administrador\Cursos\frmAsignacionLaboratorio.resx">
+      <DependentUpon>frmAsignacionLaboratorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\Cursos\frmHabilitacionCursos.resx">
+      <DependentUpon>frmHabilitacionCursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\Cursos\frmListadoCursos.resx">
+      <DependentUpon>frmListadoCursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\Cursos\frmListadoLaboratorio.resx">
+      <DependentUpon>frmListadoLaboratorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrador\Cursos\frmModuloCursos.resx">
+      <DependentUpon>frmModuloCursos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="agregarestudiante.resx">
       <DependentUpon>agregarestudiante.cs</DependentUpon>
     </EmbeddedResource>
