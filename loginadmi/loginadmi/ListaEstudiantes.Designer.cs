@@ -168,6 +168,7 @@
             this.btn_EditarEstudiante.TabIndex = 46;
             this.btn_EditarEstudiante.Text = "Editar Estudiante";
             this.btn_EditarEstudiante.UseVisualStyleBackColor = false;
+            this.btn_EditarEstudiante.Click += new System.EventHandler(this.btn_EditarEstudiante_Click);
             // 
             // list_estudiantes
             // 

@@ -50,5 +50,10 @@ namespace loginadmi
         {
 
         }
+
+        private void PanInscripcion_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

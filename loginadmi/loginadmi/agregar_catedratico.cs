@@ -44,64 +44,91 @@ namespace loginadmi
         private void btn_catedratico_Click(object sender, EventArgs e)
         {
             agregar_catedratico nuevoFormulario = new agregar_catedratico();
-
             nuevoFormulario.Show();
-
             this.Hide(); // o this.Close(); si quieres cerrarlo
         }
 
         private void btn_registrar_Click(object sender, EventArgs e)
         {
-            string nombres = txt_nombres.Text.Trim();
-            string apellidos = txt_carne.Text.Trim();
-            string carne = txt_carne.Text.Trim();
-            string telefono = txt_telefono.Text.Trim();
-            string correo = txt_correo.Text.Trim();
-            string usuario = txt_usuario.Text.Trim();         // Asegúrate de tener este TextBox en el formulario
-            string contraseña = txt_contraseña.Text.Trim();   // Asegúrate de tener este TextBox también
+            string snombres = txt_nombres.Text.Trim();
+            string sapellidos = txt_carne.Text.Trim();
+            string scarne = txt_carne.Text.Trim();
+            string stelefono = txt_telefono.Text.Trim();
+            string scorreo = txt_correo.Text.Trim();
+            string susuario = txt_usuario.Text.Trim();         
+            string scontraseña = txt_contraseña.Text.Trim();   
 
-            // Validar que los campos no estén vacíos
-            if (string.IsNullOrWhiteSpace(nombres) || string.IsNullOrWhiteSpace(apellidos) ||
-                string.IsNullOrWhiteSpace(carne) || string.IsNullOrWhiteSpace(telefono) ||
-                string.IsNullOrWhiteSpace(correo) || string.IsNullOrWhiteSpace(usuario) ||
-                string.IsNullOrWhiteSpace(contraseña))
+            
+            if (string.IsNullOrWhiteSpace(snombres) || string.IsNullOrWhiteSpace(sapellidos) ||
+                string.IsNullOrWhiteSpace(scarne) || string.IsNullOrWhiteSpace(stelefono) ||
+                string.IsNullOrWhiteSpace(scorreo) || string.IsNullOrWhiteSpace(susuario) ||
+                string.IsNullOrWhiteSpace(scontraseña))
             {
                 MessageBox.Show("Por favor, completa todos los campos.");
                 return;
             }
 
-            string conexionBD = ConexionBD.CadenaConexion();
+            string sconexionBD = ConexionBD.CadenaConexion();
 
-            using (MySqlConnection conexion = new MySqlConnection(conexionBD))
+            using (MySqlConnection conexion = new MySqlConnection(sconexionBD))
             {
                 try
                 {
                     conexion.Open();
 
-                    // Primero insertamos al catedrático
-                    string insertarCatedratico = @"INSERT INTO Catedratico 
-                (carnetCatedratico_pk, nombreCatedratico, apellidosCatedratico, telefonoCatedratico, correoCatedratico)
-                VALUES (@carnet, @nombres, @apellidos, @telefono, @correo)";
+                    string scarnetExistente = @"SELECT COUNT(*) FROM Catedratico WHERE carnetCatedratico_pk = @carnet";
+                    MySqlCommand comandoValidarCarnet = new MySqlCommand(scarnetExistente, conexion);
+                    comandoValidarCarnet.Parameters.AddWithValue("@carnet", scarne);
+                    int countCarnet = Convert.ToInt32(comandoValidarCarnet.ExecuteScalar());
+                    if (countCarnet > 0)
+                    {
+                        MessageBox.Show("El carnet ya está en uso. Por favor, elige otro.");
+                        return;
+                    }
 
-                    MySqlCommand comandoInsertarCatedratico = new MySqlCommand(insertarCatedratico, conexion);
-                    comandoInsertarCatedratico.Parameters.AddWithValue("@carnet", carne);
-                    comandoInsertarCatedratico.Parameters.AddWithValue("@nombres", nombres);
-                    comandoInsertarCatedratico.Parameters.AddWithValue("@apellidos", apellidos);
-                    comandoInsertarCatedratico.Parameters.AddWithValue("@telefono", telefono);
-                    comandoInsertarCatedratico.Parameters.AddWithValue("@correo", correo);
+                    string susuarioExistente = @"SELECT COUNT(*) FROM Usuario WHERE usuario = @usuario";
+                    MySqlCommand comandoValidarUsuario = new MySqlCommand(susuarioExistente, conexion);
+                    comandoValidarUsuario.Parameters.AddWithValue("@usuario", susuario);
+                    int countUsuario = Convert.ToInt32(comandoValidarUsuario.ExecuteScalar());
+                    if (countUsuario > 0)
+                    {
+                        MessageBox.Show("El nombre de usuario ya está en uso. Por favor, elige otro.");
+                        return;
+                    }
+
+                    string scorreoExistente = @"SELECT COUNT(*) FROM Usuario WHERE correo = @correo";
+                    MySqlCommand comandoValidarCorreo = new MySqlCommand(scorreoExistente, conexion);
+                    comandoValidarCorreo.Parameters.AddWithValue("@correo", scorreo);
+                    int countCorreo = Convert.ToInt32(comandoValidarCorreo.ExecuteScalar());
+                    if (countCorreo > 0)
+                    {
+                        MessageBox.Show("El correo ya está en uso. Por favor, elige otro.");
+                        return;
+                    }
+
+                    string sinsertarCatedratico = @"INSERT INTO Catedratico 
+                    (carnetCatedratico_pk, nombreCatedratico, apellidosCatedratico, telefonoCatedratico, correoCatedratico)
+                     VALUES (@carnet, @nombres, @apellidos, @telefono, @correo)";
+
+                    MySqlCommand comandoInsertarCatedratico = new MySqlCommand(sinsertarCatedratico, conexion);
+                    comandoInsertarCatedratico.Parameters.AddWithValue("@carnet", scarne);
+                    comandoInsertarCatedratico.Parameters.AddWithValue("@nombres", snombres);
+                    comandoInsertarCatedratico.Parameters.AddWithValue("@apellidos", sapellidos);
+                    comandoInsertarCatedratico.Parameters.AddWithValue("@telefono", stelefono);
+                    comandoInsertarCatedratico.Parameters.AddWithValue("@correo", scorreo);
 
                     comandoInsertarCatedratico.ExecuteNonQuery();
 
-                    // Luego insertamos al usuario asociado al catedrático
-                    string insertarUsuario = @"INSERT INTO Usuario 
+                    
+                    string sinsertarUsuario = @"INSERT INTO Usuario 
                 (usuario, contraseña, codigoRolUsuario_fk, carnetCatedratico_fk) 
                 VALUES (@usuario, @contraseña, @rol, @carnetCatedratico)";
 
-                    MySqlCommand comandoInsertarUsuario = new MySqlCommand(insertarUsuario, conexion);
-                    comandoInsertarUsuario.Parameters.AddWithValue("@usuario", usuario);
-                    comandoInsertarUsuario.Parameters.AddWithValue("@contraseña", contraseña);
-                    comandoInsertarUsuario.Parameters.AddWithValue("@rol", 2); // Asignar rol 2 para catedrático
-                    comandoInsertarUsuario.Parameters.AddWithValue("@carnetCatedratico", carne);
+                    MySqlCommand comandoInsertarUsuario = new MySqlCommand(sinsertarUsuario, conexion);
+                    comandoInsertarUsuario.Parameters.AddWithValue("@usuario", susuario);
+                    comandoInsertarUsuario.Parameters.AddWithValue("@contraseña", scontraseña);
+                    comandoInsertarUsuario.Parameters.AddWithValue("@rol", 2); 
+                    comandoInsertarUsuario.Parameters.AddWithValue("@carnetCatedratico", scarne);
 
                     comandoInsertarUsuario.ExecuteNonQuery();
 
@@ -133,7 +160,9 @@ namespace loginadmi
         {
 
         }
-        private void btn_listaCatedraticos_Click(object sender, EventArgs e)
+      
+
+        private void btn_listacatedratico_Click(object sender, EventArgs e)
         {
             ListaCatedratico nuevoFormulario = new ListaCatedratico();
             nuevoFormulario.Show();

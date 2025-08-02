@@ -167,7 +167,7 @@ namespace loginadmi
             this.btn_Listacatedraticos.TabIndex = 45;
             this.btn_Listacatedraticos.Text = "Lista Catedratico";
             this.btn_Listacatedraticos.UseVisualStyleBackColor = false;
-            this.btn_Listacatedraticos.Click += new System.EventHandler(this.btn_catedratico_Click);
+            this.btn_Listacatedraticos.Click += new System.EventHandler(this.btn_listacatedratico_Click);
             // 
             // btn_registrar
             // 
