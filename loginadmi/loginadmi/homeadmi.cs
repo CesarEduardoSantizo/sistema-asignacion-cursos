@@ -117,5 +117,17 @@ namespace loginadmi
         {
 
         }
+
+       
+
+        private void btn_agregar5_Click(object sender, EventArgs e)
+        {
+      
+        }
+
+        private void btn_Clic(object sender, EventArgs e)
+        {
+       
+        }
     }
 }
