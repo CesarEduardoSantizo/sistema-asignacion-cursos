@@ -203,6 +203,7 @@ namespace loginadmi
             this.PanInscripcion.Name = "PanInscripcion";
             this.PanInscripcion.Size = new System.Drawing.Size(733, 438);
             this.PanInscripcion.TabIndex = 45;
+            this.PanInscripcion.Paint += new System.Windows.Forms.PaintEventHandler(this.PanInscripcion_Paint);
             // 
             // txtValor
             // 
@@ -268,7 +269,7 @@ namespace loginadmi
             this.lblDatos.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDatos.Location = new System.Drawing.Point(194, 62);
             this.lblDatos.Name = "lblDatos";
-            this.lblDatos.Size = new System.Drawing.Size(289, 28);
+            this.lblDatos.Size = new System.Drawing.Size(276, 27);
             this.lblDatos.TabIndex = 14;
             this.lblDatos.Text = "Datos De La Asignacion";
             this.lblDatos.Click += new System.EventHandler(this.lblDatos_Click);

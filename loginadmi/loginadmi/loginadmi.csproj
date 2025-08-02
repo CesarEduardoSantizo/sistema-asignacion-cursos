@@ -111,6 +111,18 @@
       <DependentUpon>agregar_catedratico.cs</DependentUpon>
     </Compile>
     <Compile Include="ConexionBD.cs" />
+    <Compile Include="EditarCatedratico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarCatedratico.Designer.cs">
+      <DependentUpon>EditarCatedratico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarEstudiante.Designer.cs">
+      <DependentUpon>EditarEstudiante.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,19 +153,11 @@
     <Compile Include="homeadmi.Designer.cs">
       <DependentUpon>homeadmi.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="ListaCatedratico.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ListaCatedratico.Designer.cs">
       <DependentUpon>ListaCatedratico.cs</DependentUpon>
-=======
-    <Compile Include="FrmNotas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmNotas.Designer.cs">
-      <DependentUpon>FrmNotas.cs</DependentUpon>
->>>>>>> 6b4189b945c602cbaa3d0d60f04899440211d064
     </Compile>
     <Compile Include="ListaEstudiantes.cs">
       <SubType>Form</SubType>
@@ -175,6 +179,12 @@
     <EmbeddedResource Include="agregar_catedratico.resx">
       <DependentUpon>agregar_catedratico.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditarCatedratico.resx">
+      <DependentUpon>EditarCatedratico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarEstudiante.resx">
+      <DependentUpon>EditarEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -190,13 +200,8 @@
     <EmbeddedResource Include="homeadmi.resx">
       <DependentUpon>homeadmi.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="ListaCatedratico.resx">
       <DependentUpon>ListaCatedratico.cs</DependentUpon>
-=======
-    <EmbeddedResource Include="FrmNotas.resx">
-      <DependentUpon>FrmNotas.cs</DependentUpon>
->>>>>>> 6b4189b945c602cbaa3d0d60f04899440211d064
     </EmbeddedResource>
     <EmbeddedResource Include="ListaEstudiantes.resx">
       <DependentUpon>ListaEstudiantes.cs</DependentUpon>
