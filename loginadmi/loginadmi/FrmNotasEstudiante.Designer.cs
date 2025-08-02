@@ -56,6 +56,12 @@
             this.btnInscripcion = new System.Windows.Forms.Button();
             this.btnInicio = new System.Windows.Forms.Button();
             this.PanMenu = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtAño = new System.Windows.Forms.TextBox();
+            this.txtSemestre = new System.Windows.Forms.TextBox();
+            this.lblAño = new System.Windows.Forms.Label();
+            this.lblSemestre = new System.Windows.Forms.Label();
             this.lstvPensum = new System.Windows.Forms.DataGridView();
             this.PicLogo = new System.Windows.Forms.PictureBox();
             this.PicInscripcion = new System.Windows.Forms.PictureBox();
@@ -67,12 +73,6 @@
             this.btnPensum = new System.Windows.Forms.Button();
             this.btnNotas = new System.Windows.Forms.Button();
             this.btnCursos = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblSemestre = new System.Windows.Forms.Label();
-            this.lblAño = new System.Windows.Forms.Label();
-            this.txtSemestre = new System.Windows.Forms.TextBox();
-            this.txtAño = new System.Windows.Forms.TextBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.pnl_home.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -83,6 +83,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptb_estudiante)).BeginInit();
             this.PanBienvenidos.SuspendLayout();
             this.PanMenu.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lstvPensum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicInscripcion)).BeginInit();
@@ -91,7 +92,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.PicNotas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicAsignacion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicInicio)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_agregar_estudiante
@@ -427,6 +427,66 @@
             this.PanMenu.Size = new System.Drawing.Size(1057, 788);
             this.PanMenu.TabIndex = 110;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnBuscar);
+            this.panel1.Controls.Add(this.txtAño);
+            this.panel1.Controls.Add(this.txtSemestre);
+            this.panel1.Controls.Add(this.lblAño);
+            this.panel1.Controls.Add(this.lblSemestre);
+            this.panel1.Controls.Add(this.lstvPensum);
+            this.panel1.Location = new System.Drawing.Point(126, 143);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(789, 552);
+            this.panel1.TabIndex = 46;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(20)))));
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.Location = new System.Drawing.Point(595, 26);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(155, 38);
+            this.btnBuscar.TabIndex = 50;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // txtAño
+            // 
+            this.txtAño.Location = new System.Drawing.Point(368, 42);
+            this.txtAño.Name = "txtAño";
+            this.txtAño.Size = new System.Drawing.Size(149, 22);
+            this.txtAño.TabIndex = 49;
+            // 
+            // txtSemestre
+            // 
+            this.txtSemestre.Location = new System.Drawing.Point(63, 42);
+            this.txtSemestre.Name = "txtSemestre";
+            this.txtSemestre.Size = new System.Drawing.Size(150, 22);
+            this.txtSemestre.TabIndex = 48;
+            // 
+            // lblAño
+            // 
+            this.lblAño.AutoSize = true;
+            this.lblAño.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblAño.Location = new System.Drawing.Point(363, 15);
+            this.lblAño.Name = "lblAño";
+            this.lblAño.Size = new System.Drawing.Size(48, 25);
+            this.lblAño.TabIndex = 47;
+            this.lblAño.Text = "Año";
+            // 
+            // lblSemestre
+            // 
+            this.lblSemestre.AutoSize = true;
+            this.lblSemestre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblSemestre.Location = new System.Drawing.Point(58, 15);
+            this.lblSemestre.Name = "lblSemestre";
+            this.lblSemestre.Size = new System.Drawing.Size(96, 25);
+            this.lblSemestre.TabIndex = 46;
+            this.lblSemestre.Text = "Semestre";
+            // 
             // lstvPensum
             // 
             this.lstvPensum.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -557,66 +617,6 @@
             this.btnCursos.Text = "Cursos";
             this.btnCursos.UseVisualStyleBackColor = false;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnBuscar);
-            this.panel1.Controls.Add(this.txtAño);
-            this.panel1.Controls.Add(this.txtSemestre);
-            this.panel1.Controls.Add(this.lblAño);
-            this.panel1.Controls.Add(this.lblSemestre);
-            this.panel1.Controls.Add(this.lstvPensum);
-            this.panel1.Location = new System.Drawing.Point(126, 143);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(789, 552);
-            this.panel1.TabIndex = 46;
-            // 
-            // lblSemestre
-            // 
-            this.lblSemestre.AutoSize = true;
-            this.lblSemestre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblSemestre.Location = new System.Drawing.Point(58, 15);
-            this.lblSemestre.Name = "lblSemestre";
-            this.lblSemestre.Size = new System.Drawing.Size(96, 25);
-            this.lblSemestre.TabIndex = 46;
-            this.lblSemestre.Text = "Semestre";
-            // 
-            // lblAño
-            // 
-            this.lblAño.AutoSize = true;
-            this.lblAño.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblAño.Location = new System.Drawing.Point(363, 15);
-            this.lblAño.Name = "lblAño";
-            this.lblAño.Size = new System.Drawing.Size(48, 25);
-            this.lblAño.TabIndex = 47;
-            this.lblAño.Text = "Año";
-            // 
-            // txtSemestre
-            // 
-            this.txtSemestre.Location = new System.Drawing.Point(63, 42);
-            this.txtSemestre.Name = "txtSemestre";
-            this.txtSemestre.Size = new System.Drawing.Size(150, 22);
-            this.txtSemestre.TabIndex = 48;
-            // 
-            // txtAño
-            // 
-            this.txtAño.Location = new System.Drawing.Point(368, 42);
-            this.txtAño.Name = "txtAño";
-            this.txtAño.Size = new System.Drawing.Size(149, 22);
-            this.txtAño.TabIndex = 49;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(7)))), ((int)(((byte)(20)))));
-            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Location = new System.Drawing.Point(610, 26);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(155, 38);
-            this.btnBuscar.TabIndex = 50;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = false;
-            // 
             // FrmNotasEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -655,6 +655,8 @@
             this.PanBienvenidos.ResumeLayout(false);
             this.PanBienvenidos.PerformLayout();
             this.PanMenu.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lstvPensum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicInscripcion)).EndInit();
@@ -663,8 +665,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.PicNotas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicAsignacion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicInicio)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
